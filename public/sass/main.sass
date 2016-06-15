@@ -1,0 +1,84 @@
+
+
+body,ol,ul,h1,h2,h3,h4,div,input,label
+    margin: 0
+    border: 0
+    box-sizing: border-box
+    font-family: 'Titillium Web', sans-serif
+h1, h2, h3, h4
+    font-weight: 200
+    padding: 0.5em 1em
+    
+$bgcolor:    #0e1547    
+$vbgcolor:   #7db9e8    
+$viewcolor1: #911d22
+$viewcolor2: rgba(84,3,67,0.7)
+$brdcolor:   hsl(0deg, 0%, 40%)    
+$shdcolor:   #000011    
+$errbgcolor: hsl(0deg, 80%, 70%)    
+    
+html
+    background: $bgcolor /* Old browsers */
+    background: -moz-linear-gradient(-45deg, $bgcolor 0%, $vbgcolor 100%)
+    background: -webkit-linear-gradient(-45deg, $bgcolor 0%, $vbgcolor 100%)
+    background: linear-gradient(135deg, $bgcolor 0%, $vbgcolor 100%)
+    color: white
+    height: 100%
+    margin: auto
+.view
+    background: $viewcolor1 /* Old browsers */
+    background: -moz-linear-gradient(-45deg, $viewcolor1 0%, $viewcolor2 100%)
+    background: -webkit-linear-gradient(-45deg, $viewcolor1 0%, $viewcolor2 100%)
+    background: linear-gradient(135deg, $viewcolor1 0%, $viewcolor2 100%)
+    border: 1px solid $brdcolor
+    border-width: 1px 0
+    box-shadow: 0 0 24px $shdcolor
+    min-height: 3em
+    margin: 2em 1em
+    width: calc(100% - 2em)
+.view:hover
+    background-color: lighten($viewcolor2, 5%)
+.error
+    background-color: $errbgcolor
+.error:hover
+    background-color: darken($errbgcolor, 5%)
+.view > div 
+    margin: 1em   
+label 
+    display: inline-block
+    padding: 0 1em
+    text-align: right
+    width: 50%
+input,button,select 
+    display: inline-block
+    padding: 0 1em
+    text-align: left
+    width: 50%
+    max-width: 30em
+input:invalid,select:invalid
+    border-style: solid
+    border-width: 0 0 2px 0
+    border-color: red
+    margin-bottom: 2px
+    color: red
+input:valid,select:valid    
+    border: 0
+input[readonly]
+    background-color: transparent
+    color: white
+button
+    height: 3em
+    text-align: center
+    margin-left: 50%
+a
+    color: yellow
+    text-shadow: 0 0 2px yellow
+    margin-left: 0.5em
+p
+    margin: 2em
+.selected
+    background-color: yellow
+    color: $viewcolor1
+.selected a
+    color: lighten($viewcolor1, 10%)
+    

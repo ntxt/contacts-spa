@@ -1,0 +1,109 @@
+body, ol, ul, h1, h2, h3, h4, div, input, label {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 200;
+  padding: 0.5em 1em;
+}
+
+html {
+  background: #0e1547;
+  background: -moz-linear-gradient(-45deg, #0e1547 0%, #7db9e8 100%);
+  background: -webkit-linear-gradient(-45deg, #0e1547 0%, #7db9e8 100%);
+  background: linear-gradient(135deg, #0e1547 0%, #7db9e8 100%);
+  color: white;
+  height: 100%;
+  margin: auto;
+}
+
+.view {
+  background: #911d22;
+  background: -moz-linear-gradient(-45deg, #911d22 0%, rgba(84, 3, 67, 0.7) 100%);
+  background: -webkit-linear-gradient(-45deg, #911d22 0%, rgba(84, 3, 67, 0.7) 100%);
+  background: linear-gradient(135deg, #911d22 0%, rgba(84, 3, 67, 0.7) 100%);
+  border: 1px solid #666666;
+  border-width: 1px 0;
+  box-shadow: 0 0 24px #000011;
+  min-height: 3em;
+  margin: 2em 1em;
+  width: calc(100% - 2em);
+}
+
+.view:hover {
+  background-color: rgba(109, 4, 87, 0.7);
+}
+
+.error {
+  background-color: #f07575;
+}
+
+.error:hover {
+  background-color: #ed5e5e;
+}
+
+.view > div {
+  margin: 1em;
+}
+
+label {
+  display: inline-block;
+  padding: 0 1em;
+  text-align: right;
+  width: 50%;
+}
+
+input, button, select {
+  display: inline-block;
+  padding: 0 1em;
+  text-align: left;
+  width: 50%;
+  max-width: 30em;
+}
+
+input:invalid, select:invalid {
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: red;
+  margin-bottom: 2px;
+  color: red;
+}
+
+input:valid, select:valid {
+  border: 0;
+}
+
+input[readonly] {
+  background-color: transparent;
+  color: white;
+}
+
+button {
+  height: 3em;
+  text-align: center;
+  margin-left: 50%;
+}
+
+a {
+  color: yellow;
+  text-shadow: 0 0 2px yellow;
+  margin-left: 0.5em;
+}
+
+p {
+  margin: 2em;
+}
+
+.selected {
+  background-color: yellow;
+  color: #911d22;
+}
+
+.selected a {
+  color: #bc262c;
+}
+
+/*# sourceMappingURL=main.css.map */

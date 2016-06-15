@@ -1,0 +1,17 @@
+<div>
+    <h1>Edit</h1>
+    <form id="editForm">
+        <label for="id">id</label><input name="id" type="text" id="id" value="${id}" readonly/>
+        <label for="first_name">first name</label><input name="firstName" id="first_name" type="text" value="${firstName}"/>
+        <label for="last_name">last name</label><input name="lastName" id="last_name" type="text" value="${lastName}"/>
+        <label for="email">email</label><input name="email" id="email" type="text" value="${email}"/>
+        <label for="country">country</label>
+        <select name="country" id="country" value="${country}" prompt="select">
+            <option value="" >Select a country</option>
+            <option data-foreach="countries" ${selected} value="${code}">${name}</option>
+        </select>
+        <button type="submit" >OK</button>
+        <button id="deleteBtn" value="${id}">delete</button>
+        <button type="reset" >cancel</button>
+    </form>
+</div>
