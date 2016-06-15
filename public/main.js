@@ -6,7 +6,7 @@ define(["require", "persist", "view-controller", "validation", "country-list-bun
         views     : {
             init    : {
                 title    : "Start",
-                url      : "/tpl/init.html",        
+                url      : "tpl/init.html",        
                 provider : function(){
                     return {
                         links : ['list', 'edit'].map(mapNameToViewLink)
@@ -16,7 +16,7 @@ define(["require", "persist", "view-controller", "validation", "country-list-bun
             },
             list    : {
                 title    : "Contact list",
-                url      : "/tpl/list.html",
+                url      : "tpl/list.html",
                 provider : function(){
                     return {
                         contacts : model.contacts
@@ -26,7 +26,7 @@ define(["require", "persist", "view-controller", "validation", "country-list-bun
             },
             edit    : {
                 title    : "Editing", 
-                url      : "/tpl/edit.html",
+                url      : "tpl/edit.html",
                 provider : function(){
                     var contact = getItemToEdit();
                     var options = getCountriesOptions(contact.country);
@@ -36,7 +36,7 @@ define(["require", "persist", "view-controller", "validation", "country-list-bun
             },
             error   : {
                 title    : "Error",
-                url      :"/tpl/error.html",       
+                url      :"tpl/error.html",       
                 provider : function(){
                     return {
                         msg : 'not getting the job then I guess...'
